@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "node entry-server.js",
-    "build": "tsc && vite build && vite preview",
+    "build": "tsc && vite build",
     "build:client": "vite build --outDir dist/client --ssrManifest",
     "build:server": "vite build --outDir dist/server --ssr src/entry-server.js"
   },
