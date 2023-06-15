@@ -2,14 +2,14 @@
   "name": "messenger",
   "version": "1.0.0",
   "description": "Free to use online real time messenger build on Vite",
-  "main": "main.ts",
+  "main": "entry-server.ts",
   "type": "module",
   "engines": {
     "npm": ">=9.6.4",
     "node": "<=18.15.0"
   },
   "scripts": {
-    "dev": "node entry-server.js",
+    "dev": "ts-node --esm entry-server.ts",
     "start": "tsc && vite build && vite preview",
     "build": "tsc && vite build",
     "build:client": "vite build --outDir dist/client --ssrManifest",
@@ -23,6 +23,7 @@
   "author": "Vitalii Iakunin",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
@@ -32,10 +33,12 @@
     "handlebars": "^4.7.7",
     "postcss-nesting": "^11.2.2",
     "sass": "^1.62.1",
+    "ts-node": "^10.9.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "dotenv": "^16.1.4",
     "express": "^4.18.2"
   }
 }

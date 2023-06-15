@@ -22,6 +22,8 @@ export const words = {
   APPLY_CHANGES: 'Applay changes',
   NOT_FOUND: 'Page not found',
   NOT_FOUND_NUMBER: '404',
+  SERVER_ERROR_NUMBER: '5**',
+  SERVER_ERROR: "We're trying to cope with the problem",
   TO_HOME: 'Get back',
   CHATS_HEADER: 'Chats',
   SEARCH_PLACEHOLDER: 'Search',
