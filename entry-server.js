@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import express from 'express';
+import { dirname } from 'path';
 import { createServer as createViteServer } from 'vite';
 
 async function createServer() {
@@ -16,7 +17,7 @@ async function createServer() {
     try {
       // 1. Read index.html
       let template = fs.readFileSync(
-        path.resolve(__dirname, 'index.html'),
+        path.resolve(dirname(), 'index.html'),
         'utf-8'
       );
 
